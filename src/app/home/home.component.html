@@ -11,3 +11,15 @@
     </p>
 
 </div>
+
+<div class="play-container" [ngClass]="setclasses()">
+
+<ng-template [ngIf]="clickCounter > 5" [ngIfElse] = "none">
+    <h5>you clicked <strong>Grater than </strong> 5 times </h5>
+</ng-template>    
+
+<ng-template #none >
+    <h5>you clicked <strong>Less than </strong> 5 times </h5>
+
+</ng-template>
+</div>
